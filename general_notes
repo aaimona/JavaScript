@@ -1,0 +1,22 @@
+// JAVASCRIPT is A ZERO-BASED LANGUAGE!!!
+
+// Always finish a line of code with a semicolon.
+// Two slashes mark the beginning of a comment in JS.
+// === equal to, !== not equal to
+
+// if statement syntax:
+if(     ) {
+  
+} else {
+
+}
+
+// pop-up box commands: confirm() - user is asked to confirm by clicking OK; prompt() - user is asked to answer a question
+// naming a variable is case-sensitive
+//declaring variables:
+var myVariable = 30;
+// changing the value of existing variable:
+myVariable = 37;
+
+//printing stuff to the console - NOT BY PRINT COMMAND:
+console.log(myVariable)
