@@ -1,5 +1,7 @@
 // JAVASCRIPT is A ZERO-BASED LANGUAGE!!!
 
+// Don't Repeat Yourself (D.R.Y) - one of the most important rule of programming!!!
+
 // Always finish a line of code with a semicolon.
 // Two slashes mark the beginning of a comment in JS.
 // === equal to, !== not equal to
@@ -18,5 +20,18 @@ var myVariable = 30;
 // changing the value of existing variable:
 myVariable = 37;
 
-//printing stuff to the console - NOT BY PRINT COMMAND:
+// printing stuff to the console - NOT BY PRINT COMMAND:
 console.log(myVariable)
+
+// declaring a function:
+var sayHallo = function(name) {
+  console.log("Hello " + name);      // every line of code in this block AND the entire function must end with a ;
+};
+
+// there is a widely accepted rule that if the name of the function is more than 1 word then all the words in the name
+// except the first one should begin with capital letter, e.g. thisIsMyFunction()
+
+// SCOPE
+// variables defined outside of a function can be accessed anywhere and are called global variables
+// variables defined inside a function can be accessed only inside this function and are called local variables
+// the word "var" used to define a function or variable creates a new object in the current scope (local or global)
