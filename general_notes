@@ -35,3 +35,22 @@ var sayHallo = function(name) {
 // variables defined outside of a function can be accessed anywhere and are called global variables
 // variables defined inside a function can be accessed only inside this function and are called local variables
 // the word "var" used to define a function or variable creates a new object in the current scope (local or global)
+
+// incrementing variable by 1 e.g. inside for loop - i++, decrementing by 1 - i--, incrementing by x - i += x
+
+// ARRAYS
+// they can store different types of data at the same time. Arrays are surrounded with square brackets [] and the elements
+// are separated with a comma, the array ends with a semicolon, like each line of code in JS
+
+var cities = ["Melbourne", "Amman", "Helsinki", "NYC", "Warsaw", "Abu Dhabi", "Moscow", "Tehran", "Berlin", "San Diego"];
+
+for (var i = 0; i < cities.length; i++) {
+    console.log("I would like to visit " + cities[i]);
+}
+// NB #1: there is a space between "for" and () and it's ok. NB #2: second element of for statement - i<cities.length
+
+// if i include e.g. a really long string of text in my code and i want to avoid long unwrapped lines, i can put a backslash
+// at the end of one line to make the line wrap, like this:
+var text = "Hey, how are you \ // backslash here!
+doing? My name is Emily.";
+
