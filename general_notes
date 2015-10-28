@@ -54,3 +54,30 @@ for (var i = 0; i < cities.length; i++) {
 var text = "Hey, how are you \ // backslash here!
 doing? My name is Emily.";
 
+// When using boolean values e.g. in loops, i don't need to write the whole comparison expression:
+var bool = true;
+while(bool === true){       // the "=== true" part is redundant here
+    console.log("Less is more!");
+    bool = false;
+}
+// instead, i can just write:
+var bool = true;
+while(bool){                // see? just "bool" is enough because its default value is true
+    console.log("Less is more!");
+    bool = false;
+}
+
+// Just an example of while loop:
+var loop = function(){
+	var n = 3;
+	while(n > 0){
+		console.log("I'm looping!");
+		n--;
+	};
+};
+
+// do / while loop - it runs at least once and then checks the condition to see if it should run again:
+var loopCondition = false;
+do {
+	console.log("I'm gonna stop looping 'cause my condition is " + loopCondition + "!");	
+} while (loopCondition);
