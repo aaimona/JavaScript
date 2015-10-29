@@ -81,3 +81,40 @@ var loopCondition = false;
 do {
 	console.log("I'm gonna stop looping 'cause my condition is " + loopCondition + "!");	
 } while (loopCondition);
+
+// SWITCH STATEMENT
+// i can use it instead of if/else if/else statement when there are many options to code:
+var color = prompt("What's your favorite primary color?","Type your favorite color here");
+switch(color) {
+  case 'red':
+    console.log("Red's a good color!");
+    break;
+  case 'blue':
+    console.log("That's my favorite color, too!");
+    break;
+  case 'yellow':
+      console.log("Long live yellow!");
+      break;
+  default:
+    console.log("I don't think that's a primary color!");
+}
+// NB: each case ends with break in order not to execute the default response.
+
+var answer = prompt("Which programming language do you like best?");
+switch(answer) {
+  case 'JavaScript':
+    console.log("Srsly? It's so bushy!");
+    break;
+  // Add your code here!
+  case 'Python':
+      console.log("Now we're talking! Python's great!");
+      break;
+  case 'R':
+      console.log("Look, we have a programming aristocrat here!");
+      break;
+  default:
+        console.log("Uhm, so I see you're not a programmer at all.");
+}
+
+// logical operators: && and, || or, ! not
+
