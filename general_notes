@@ -118,3 +118,20 @@ switch(answer) {
 
 // logical operators: && and, || or, ! not
 
+// ARRAYS
+// arrays can be nested in one another, e.g. var myArray = [[1,1], [2,2]]
+// arrays can be heterogenous, ie. can contain different types of data, numbers, booleans and/or strings
+// jagged arrays are arrays whose nested arrays are not the same length, ie. var array = [[1], [2,2,2], [3,3]]
+
+// OBJECTS
+// In English, you have nouns (which you can think of as "things") and verbs (which you can think of as "actions"). 
+// Until now, our nouns (data, such as numbers, strings, or variables) and verbs (functions) have been separate.
+// No longer! Using objects, we can put our information and the functions that use that information in the same place.
+// You can also think of objects as combinations of key-value pairs (like arrays), only their keys don't have to be 
+// numbers like 0, 1, or 2: they can be strings and variables.
+// an object is a collection of data enclosed in curly braces, e.g.
+var me = {
+name: "Kasia", // <-- comma at the end, not a semicolon
+age: 30,
+origin: "Poland"
+}
