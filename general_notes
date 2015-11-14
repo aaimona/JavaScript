@@ -2,6 +2,8 @@
 
 // Don't Repeat Yourself (D.R.Y) - one of the most important rule of programming!!!
 
+// three basic primitive types of data: strings, numbers and booleans
+
 // Always finish a line of code with a semicolon.
 // Two slashes mark the beginning of a comment in JS.
 // === equal to, !== not equal to
