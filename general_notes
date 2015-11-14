@@ -2,7 +2,7 @@
 
 // Don't Repeat Yourself (D.R.Y) - one of the most important rule of programming!!!
 
-// three basic primitive types of data: strings, numbers and booleans
+// three basic primitive types of data: strings, numbers and booleans. Other, more complex: arrays and objects
 
 // Always finish a line of code with a semicolon.
 // Two slashes mark the beginning of a comment in JS.
@@ -137,3 +137,30 @@ name: "Kasia", // <-- comma at the end, not a semicolon
 age: 30,
 origin: "Poland"
 }
+// dot notation - a way to access an information inside an object. Here's the syntax:
+ObjectName.PropertyName
+// bracket notation - another way to access this info. Syntax:
+ObjectName["PropertyName"] // <-- note that i need quotation marks around PropertyName
+// i can create objects in two ways: with literal notation, i.e. literally typing the new object from scratch, like this:
+var objectName = {
+//object properties here;
+}
+// or with so-called constructor, like this:
+var objectName = new Object();
+// then i need to fill this new object with properties, created with dot notation, like this:
+objectName.property1 = "34";
+objectName.property2 = "true";
+
+// METHODS
+// methods are important because they allow me to:
+// * change object property values,
+// * make calculations based on object properties (while functions can only use parameters as input)
+
+// i can make my own constructors that, unlike the default JS constructor, is able to create objects with properties, e.g.
+function Person(name,age) {
+  this.name = name;
+  this.age = age;
+}
+var bob = new Person("Bob", 35)
+
+
