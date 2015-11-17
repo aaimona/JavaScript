@@ -3,6 +3,7 @@
 // Don't Repeat Yourself (D.R.Y) - one of the most important rule of programming!!!
 
 // three basic primitive types of data: strings, numbers and booleans. Other, more complex: arrays and objects
+// typeof - a command to get to know the type of data i'm dealing with
 
 // Always finish a line of code with a semicolon.
 // Two slashes mark the beginning of a comment in JS.
@@ -128,7 +129,7 @@ switch(answer) {
 myArray = [4, 7, 11]; 
 myArray[3] = 13; // <-- i put number 13 at position 3 (myArray's last position was 2 - 3 elements, 0-based language)
 
-// OBJECTS
+// OBJECTS, CLASSES
 // In English, you have nouns (which you can think of as "things") and verbs (which you can think of as "actions"). 
 // Until now, our nouns (data, such as numbers, strings, or variables) and verbs (functions) have been separate.
 // No longer! Using objects, we can put our information and the functions that use that information in the same place.
@@ -154,6 +155,21 @@ var objectName = new Object();
 objectName.property1 = "34";
 objectName.property2 = "true";
 
+// i can make my own constructor, i.e. i can create my own class, like this:
+function Cat(name, breed) {
+this.name = name;
+this.breed = breed;
+}
+// and after that i can manipulate the whole class, e.g. by adding common methods, like so:
+Cat.prototype.newMethod = function() {
+console.log("All cats can now meow.");
+};
+// all cats can use this new method even though i didn't define the method for each cat separately;
+
+// CLASS INHERITANCE
+// if i create a new class that is a child of another class, i need to signal this like so:
+newClass.prototype = new existingClass();
+
 // METHODS
 // methods are important because they allow me to:
 // * change object property values,
@@ -165,5 +181,4 @@ function Person(name,age) {
   this.age = age;
 }
 var bob = new Person("Bob", 35)
-
 
