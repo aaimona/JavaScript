@@ -124,6 +124,9 @@ switch(answer) {
 // arrays can be nested in one another, e.g. var myArray = [[1,1], [2,2]]
 // arrays can be heterogenous, ie. can contain different types of data, numbers, booleans and/or strings
 // jagged arrays are arrays whose nested arrays are not the same length, ie. var array = [[1], [2,2,2], [3,3]]
+// adding something into an existing array: 
+myArray = [4, 7, 11]; 
+myArray[3] = 13; // <-- i put number 13 at position 3 (myArray's last position was 2 - 3 elements, 0-based language)
 
 // OBJECTS
 // In English, you have nouns (which you can think of as "things") and verbs (which you can think of as "actions"). 
